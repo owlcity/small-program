@@ -124,6 +124,36 @@
   right: 10px;
   height: 25px;
 }
+/* 搜索页 */
+.history-con{
+  padding-top:35rpx;
+  padding-left:30rpx;
+  padding-right:30rpx;
+}
+.history-clear{
+  float: right;
+  font-size: 25rpx;
+  font-weight: 300;
+  width: 56rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  border: 1px solid #9ab2ca;
+  color: #9ab2ca;
+  border-radius: 50%;
+}
+.history-list{
+  flex-wrap: wrap;
+}
+.history-item{
+  font-size: 13px;
+  padding: 3px 5px;
+  background-color: #ebf0f4;
+  color: #5876aa;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-weight: 300;
+}
 /* 文章详情 */
 .artical-con .weui-panel::after{
   border-bottom: none;
@@ -147,6 +177,7 @@
 /*content*/
 .drawer_attr_box {
  width: 650rpx;
+ height: 100%;
  overflow: hidden;
  position: fixed;
  top: 0;
@@ -155,13 +186,34 @@
  background: #fff;
 }
 .drawer_content {
- padding: 20rpx 40rpx;
- height: 470rpx;
  overflow-y: scroll;
 }
 .drawer_title{
  padding:35rpx;
  font-size: 14px;
  background-color: #f0f0f0;
+}
+.drawer_content .weui-cell::before{
+  left: 0;
+}
+.drawer_content .weui-cell_link{
+  border-bottom:1rpx solid #d9d9d9;
+}
+.m-bottom{
+  position:absolute;left:0;bottom:0;width:100%;
+}
+.m-bottom button{
+  border-radius: 0;
+}
+button[type="sure"]{
+  color: #ffffff;
+  background-color: #2882f0;
+}
+button[type="clear"]{
+  color: #ffffff;
+  background-color: #5ba9fb;
+}
+.m-bottom button::after{
+  border: none;
 }
 /* 抽屉动画end */

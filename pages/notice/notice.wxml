@@ -91,18 +91,71 @@
       </view>
       </scroll-view>
 
-      <!--抽屉动画start-->
+<!--抽屉动画start-->
 <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
 <!--使用animation属性指定需要执行的动画-->
 <view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
  <!--drawer content-->
  <view class="drawer_content">
-  <view class="drawer_title">删选</view>
+  <view class="drawer_title font-light text-light fz14">删选</view>
   <view class="drawer_main">
-    <view>
-      发布时间
+    <view class="history-con">
+      <view class="history-title">
+        <text class="font-light text-light fz12">发布时间</text>
+      </view>
+
+      <view class="history-list weui-flex">
+        <view class="history-item">
+          1个月内
+        </view>
+        <view class="history-item">
+          1-3个月
+        </view>
+        <view class="history-item">
+          3-6个月
+        </view>
+        <view class="history-item">
+          6个月以前
+        </view>
+      </view>
     </view>
+    <view class="history-con">
+      <view class="history-title">
+        <text class="font-light text-light fz12">接受部门</text>
+      </view>
+
+      <view class="history-list weui-flex">
+        <view class="history-item">
+          全体员工
+        </view>
+        <view class="history-item">
+          本部门
+        </view>
+      </view>
+    </view>
+
+    <view class="history-con">
+      <view class="history-title">
+        <text class="font-light text-light fz12">发布人</text>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_access weui-cell_link font-light">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="weui-cell__bd">{{defaultPerson}}</picker>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+
   </view>
+    
+  </view>
+  
+
+  <view class="weui-flex m-bottom">
+    <view class="weui-flex__item">
+      <button  class="weui-btn fz14 font-light" type="clear">清空 </button>
+    </view>
+    <view class="weui-flex__item">
+      <button  class="weui-btn fz14 font-light" type="sure">确定 </button>
+    </view>
   </view>
 </view>
 <!--抽屉动画start-->

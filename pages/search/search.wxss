@@ -14,33 +14,6 @@
   padding-bottom:40rpx;
 }
 
-.history-con{
-  padding-top:35rpx;
-  padding-left:30rpx;
-  padding-right:30rpx;
-}
-.history-clear{
-  float: right;
-  font-size: 25rpx;
-  font-weight: 300;
-  width: 56rpx;
-  height: 56rpx;
-  line-height: 56rpx;
-  text-align: center;
-  border: 1px solid #9ab2ca;
-  color: #9ab2ca;
-  border-radius: 50%;
-}
 .history-list{
-  flex-wrap: wrap;
   margin-top: 10px;
-}
-.history-item{
-  font-size: 13px;
-  padding: 3px 5px;
-  background-color: #ebf0f4;
-  color: #5876aa;
-  margin-right: 10px;
-  margin-top: 10px;
-  font-weight: 300;
 }

@@ -8,8 +8,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    showModalStatus: false
+    showModalStatus: false,
+    defaultPerson: "发布人1",
+    array: ['发布人1', '发布人2', '发布人3', '发布人4'],
+    index: 0
   },
+  // 抽屉动画
   powerDrawer: function (e) {
     var currentStatu = e.currentTarget.dataset.statu;
     this.anDrawer(currentStatu)
@@ -62,7 +66,18 @@ Page({
       );
     }
   },
-
+  // 选择器
+  
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value);
+    console.log(e);
+    
+    this.setData({
+      index: e.detail.value,
+      defaultPerson: this.data.array[e.detail.value]
+      
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

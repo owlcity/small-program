@@ -9,6 +9,10 @@
                     </view>
                 </block>
                 <view class="weui-navbar__slider" style="transform: translateX({{sliderOfft}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+
+                <navigator url="../search/search" style="position:absolute;right:0;top:0;padding:20rpx 25rpx;">
+                  <icon type="search" size="19"></icon>
+                </navigator>
             </view>
 
             <!-- ==tab-nav-end== -->
