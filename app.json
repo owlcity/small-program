@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/news/news",
+    "pages/notice/notice",
+    "pages/task/task",
+    "pages/work/work",
+    "pages/search/search",
+    "pages/mine/mine",
+    "pages/artical/artical"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "OA后台管理系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#728ab8",
+    "selectedColor": "#3f92f0",
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "images/tabbar/icon1.png",
+        "selectedIconPath": "images/tabbar/icon1s.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "iconPath": "images/tabbar/icon2.png",
+        "selectedIconPath": "images/tabbar/icon2s.png",
+        "text": "公告"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "iconPath": "images/tabbar/task.png",
+        "selectedIconPath": "images/tabbar/task.png",
+        "text": "添加任务"
+      },
+      {
+        "pagePath": "pages/work/work",
+        "iconPath": "images/tabbar/icon3.png",
+        "selectedIconPath": "images/tabbar/icon3s.png",
+        "text": "工作台"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/tabbar/icon4.png",
+        "selectedIconPath": "images/tabbar/icon4s.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

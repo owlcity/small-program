@@ -1,0 +1,82 @@
+<view class="page">
+    
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" confirm-type="搜索" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping"/>
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        
+        <view class="fz12 tac font-light" style="padding-top:45rpx;padding-bottom:25rpx;">
+          在分类中搜索
+        </view>
+
+        <view class="cate-list weui-flex tac fz14 text-blue font-light">
+            <view class="weui-flex__item">
+              任务
+              <text style="float:right">|</text>
+            </view>
+            <view class="weui-flex__item">
+              项目
+              <text style="float:right">|</text>
+            </view>
+            <view class="weui-flex__item">
+              公告
+            </view>
+        </view>
+        <view class="cate-list weui-flex tac fz14 text-blue font-light">
+            <view class="weui-flex__item">
+              审批
+              <text style="float:right">|</text>
+            </view>
+            <view class="weui-flex__item">
+              审核
+              <text style="float:right">|</text>
+            </view>
+            <view class="weui-flex__item">
+              考核
+            </view>
+        </view>
+
+        <view style="height:20rpx;background-color:#f3f3f5"></view>
+
+        <view class="history-con">
+           <view class="history-title">
+              <text class="fz14">搜索历史</text>
+              <view class="history-clear">清空</view>
+           </view>
+
+           <view class="history-list weui-flex">
+              <view class="history-item">
+                搜索历史一
+              </view>
+              <view class="history-item">
+                搜索史一
+              </view>
+              <view class="history-item">
+                史一
+              </view>
+              <view class="history-item">
+                搜索历史一
+              </view>
+              <view class="history-item">
+                搜历史一
+              </view>
+              <view class="history-item">
+                搜历史一
+              </view>
+           </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,167 @@
+/**app.wxss**/
+@import 'weui.wxss';
+.pr{
+  position: relative;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.pr10{
+  padding-right: 10px;
+}
+.mt0{
+  margin-top: 0;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mb0{
+  margin-bottom: 0;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.fz14{
+  font-size: 14px;
+}
+.fz13{
+  font-size: 13px;
+}
+.fz12{
+  font-size: 12px;
+}
+/* 字体颜色 */
+.text-default{
+  color: #273248;
+}
+.text-blue{
+  color: #4295f1;
+}
+.text-light{
+  color: #8aa0c7;
+}
+.text-red{
+  color: #e63c45;
+}
+.font-normal{
+  font-weight: 400;
+}
+.font-light{
+  font-weight: 300;
+}
+.text-bold{
+  font-weight: 500;
+}
+.right-top{
+  position: absolute;top: -.4em;right: -.4em;
+}
+.tac{
+  text-align: center;
+}
+.tal{
+  text-align: left;
+}
+.tar{
+  text-align: right;
+}
+/* 单行文字截断 */
+.text-truncate{
+  width:100%;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* 多行文字截断 */
+.line-clamp {
+  width:100%;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/* 首页 */
+.weui-navbar__slider{height:2px;}
+.list-wrap{
+  padding:30rpx;
+  border-bottom:1rpx solid #cccccc;
+}
+.list-wrap-l{
+  position:relative;width:60rpx;margin-right:30rpx;
+}
+.list-wrap-i{
+  width: 60rpx; height: 60rpx;
+}
+.list-wrap-r{
+  width:600rpx;margin-top:-4px;
+}
+.maxheight{
+  height: 100%;
+}
+/* 公告 */
+.panel-list .weui-panel{
+  margin-top: 0;
+  margin-bottom: -1rpx;
+}
+.read-badge{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 4px;
+  font-size: 10px;
+}
+.noread-badge{
+  background-color: #bdc8dc;
+}
+.m-choice{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 25px;
+}
+/* 文章详情 */
+.artical-con .weui-panel::after{
+  border-bottom: none;
+}
+.artical-con image{
+  width: 100%;
+}
+/* 抽屉动画start */
+/*mask*/
+.drawer_screen {
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 1000;
+ background: #000;
+ opacity: 0.5;
+ overflow: hidden;
+}
+/*content*/
+.drawer_attr_box {
+ width: 650rpx;
+ overflow: hidden;
+ position: fixed;
+ top: 0;
+ right: 100%;
+ z-index: 1001;
+ background: #fff;
+}
+.drawer_content {
+ padding: 20rpx 40rpx;
+ height: 470rpx;
+ overflow-y: scroll;
+}
+.drawer_title{
+ padding:35rpx;
+ font-size: 14px;
+ background-color: #f0f0f0;
+}
+/* 抽屉动画end */

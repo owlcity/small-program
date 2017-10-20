@@ -1,0 +1,110 @@
+<view class="page">  
+    <view class="page__bd">
+      <scroll-view class='maxheight'>
+      <view class="font-light tac mb10 pr">
+        <text class="fz17">公告</text>
+        <view class="m-choice fz12" bindtap="powerDrawer" data-statu="open">
+          <image src="../../images/choice.png" style="height:15px; width:15px;vertical-align:middle"></image>
+          删选
+        </view>
+      </view>
+      <view class="panel-list">
+        <!-- item-start -->
+        <navigator hover-class="navigator-hover" url="../artical/artical">
+          <view class="weui-panel text-default">
+              <view class="weui-panel__bd">
+                  <view class="weui-media-box weui-media-box_text">
+                      <view class="weui-media-box__title weui-media-box__title_in-text">标题一标题一标题一标题一标题一标题一</view>
+                      <view class="weui-media-box__info mt0 mb0 font-light text-light">
+                        <view class="weui-media-box__info__meta">发布人姓名</view>
+                        <view class="weui-media-box__info__meta">2017-7-15 09:00</view>
+                      </view>
+                      <view class="weui-media-box__desc mt10 font-light">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                      
+                  </view>
+              
+                <view class="weui-badge read-badge">未读</view>
+              </view>
+          </view>
+        </navigator>
+        <!-- item-end -->
+        <view class="weui-panel text-default">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题一标题一标题一标题一标题一标题一</view>
+                    <view class="weui-media-box__info mt0 mb0 font-light text-light">
+                      <view class="weui-media-box__info__meta">发布人姓名</view>
+                      <view class="weui-media-box__info__meta">2017-7-15 09:00</view>
+                     </view>
+                    <view class="weui-media-box__desc mt10 font-light">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    
+                </view>
+
+                <view class="weui-badge read-badge noread-badge">已读</view>
+            </view>
+        </view>
+        <view class="weui-panel text-default">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题一标题一标题一标题一标题一标题一</view>
+                    <view class="weui-media-box__info mt0 mb0 font-light text-light">
+                      <view class="weui-media-box__info__meta">发布人姓名</view>
+                      <view class="weui-media-box__info__meta">2017-7-15 09:00</view>
+                     </view>
+                    <view class="weui-media-box__desc mt10 font-light">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    
+                </view>
+
+                <view class="weui-badge read-badge noread-badge">已读</view>
+            </view>
+        </view>
+        <view class="weui-panel text-default">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题一标题一标题一标题一标题一标题一</view>
+                    <view class="weui-media-box__info mt0 mb0 font-light text-light">
+                      <view class="weui-media-box__info__meta">发布人姓名</view>
+                      <view class="weui-media-box__info__meta">2017-7-15 09:00</view>
+                     </view>
+                    <view class="weui-media-box__desc mt10 font-light">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    
+                </view>
+
+                <view class="weui-badge read-badge noread-badge">已读</view>
+            </view>
+        </view>
+        <view class="weui-panel text-default">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">标题一标题一标题一标题一标题一标题一</view>
+                    <view class="weui-media-box__info mt0 mb0 font-light text-light">
+                      <view class="weui-media-box__info__meta">发布人姓名</view>
+                      <view class="weui-media-box__info__meta">2017-7-15 09:00</view>
+                     </view>
+                    <view class="weui-media-box__desc mt10 font-light">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    
+                </view>
+
+                <view class="weui-badge read-badge noread-badge">已读</view>
+            </view>
+        </view>
+      </view>
+      </scroll-view>
+
+      <!--抽屉动画start-->
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+<!--使用animation属性指定需要执行的动画-->
+<view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+ <!--drawer content-->
+ <view class="drawer_content">
+  <view class="drawer_title">删选</view>
+  <view class="drawer_main">
+    <view>
+      发布时间
+    </view>
+  </view>
+  </view>
+</view>
+<!--抽屉动画start-->
+  </view>
+</view>

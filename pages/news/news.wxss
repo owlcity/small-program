@@ -1,0 +1,24 @@
+/* pages/news/news.wxss */
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.weui-navbar{
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.weui-navbar__slider{
+  width: 3em;
+}
+.weui-navbar__item.weui-bar__item_on {
+  font-weight: 400;
+}
